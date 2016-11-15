@@ -11,6 +11,5 @@ cd /usr/local/src
 git clone https://github.com/hanschen/ksuperkey.git
 cd ksuperkey
 make
-echo -e "#!/bin/bash \n /usr/local/src/ksuperkey" >> /etc/profile.d/ksuperkey.sh
-./ksuperkey
-
+echo -e "#!/bin/bash \n /usr/local/src/ksuperkey/ksuperkey" >> /etc/profile.d/ksuperkey.sh
+echo "type '/usr/local/src/ksuperkey/ksuperkey to run, it will autorun at your next reboot'"
