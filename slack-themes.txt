@@ -1,3 +1,0 @@
-Scholarized Dark (red) :#002b36 ,#586e75 ,#073642 ,#268BD2 ,#073642 ,#839496 ,#859900 ,#dc322f 
-Scholarized Dark (magenta) :#002b36 ,#586e75 ,#073642 ,#268BD2 ,#073642 ,#839496 ,#859900 ,#d33682
-Scholarized Light (magenta) :  #fdf6e3 ,#93a1a1 ,#eee8d5 ,#268BD2 ,#EEE8D5 ,#657b83 ,#859900 ,#d33682 
