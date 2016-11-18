@@ -12,4 +12,4 @@ git clone https://github.com/hanschen/ksuperkey.git
 cd ksuperkey
 make
 echo -e "#!/bin/bash \n /usr/local/src/ksuperkey/ksuperkey" >> /etc/profile.d/ksuperkey.sh
-echo "type '/usr/local/src/ksuperkey/ksuperkey to run, it will autorun at your next reboot'"
+echo -e "Type \033[33m'/usr/local/src/ksuperkey/ksuperkey'\033[0m to run, it will autorun at your next reboot"
