@@ -1,0 +1,62 @@
+<!--
+xmlstarlet : valider, transformer avec xslt (xmlstarlet tr ?.xsl ?.xml)
+	(xmlstarlet el -u "nomfic" donne la struture du xml)
+
+xmllint : parsing (mode shell avec xmllint)
+
+xlstproc : transformer avec xslt -->
+
+<!-- ####################
+		XML
+#################### -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+OU
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- ==Ajout XSL
+=============== -->
+<?xml-stylesheet type="text/xsl" href="NOMFIC.xsl"?>
+
+<!-- ####################
+		XSL
+#################### -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<!-- ####################
+		RDF
+#################### -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+		xmlns:exemple="http://www.exemple.com#" >
+
+<!-- ==AVEC OWL
+================== -->
+<!DOCTYPE schema SYSTEM "NOMFIC.rdfs">
+
+<!-- ==AVEC OWL
+================== -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY exemple   "http://www.exemple.com#">
+    <!ENTITY rdf  "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+    <!ENTITY xsd  "http://www.w3.org/2001/XMLSchema#">
+    <!ENTITY owl  "http://www.w3.org/2002/07/owl#" >
+]>
+
+<rdf:RDF xmlns:rdf="&rdf;"
+		xmlns:rdfs="&rdfs;"
+		xmlns:xsd="&xsd;"
+		xmlns:owl="&owl;"
+		xmlns:exemple="&exemple;"
+		xml:base="&eg;"
+		xmlns="&eg;">
