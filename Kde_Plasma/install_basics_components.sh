@@ -7,7 +7,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 index=0
-to_install_rodolphe=('bumblebee' 'git' 'xinput' 'opera');
+to_install_rodolphe=('bumblebee' 'git' 'xinput' 'opera' 'nano');
 
 echo "To end this, just press Ctrl+C"
 echo "You will be asked to install ${to_install_rodolphe[*]}"
