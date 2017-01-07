@@ -1,0 +1,3 @@
+Some scripts only for Plasma, the OS target is often OpenSuse Leap, 42.2
+
+(deprecated)install_windows_key.sh is not useful anymore for OpenSuse, but you can install it just for double click "meta", which is not integrated currently
