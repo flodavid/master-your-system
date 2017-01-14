@@ -3,7 +3,10 @@
 index=0
 #toujours mettre l'élément à alliasser, puis ="ce qu'il va faire" 
 #exemple : 'testalias' '="echo \"testalias\""'
-to_install_rodolphe=('update_grub' '="grub2-mkconfig -o /boot/grub2/grub.cfg"' 'g++-5' '="g++"' 'fuck' '="sudo \$(history -p \!\!)"');
+to_install_rodolphe=('update_grub' '="grub2-mkconfig -o /boot/grub2/grub.cfg"'
+'g++-5' '="g++"'
+'fuck' '="sudo \$(history -p \!\!)"'
+);
 
 echo "To end this, just press e"
 while true; do
