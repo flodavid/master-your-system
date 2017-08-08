@@ -19,8 +19,11 @@ if (Test-Path $powershell_profile) {
 # Show command aliases
 $aliases = @(
 'New-Alias show Get-ChildItem'
+'New-Alias l Get-ChildItem'
 'New-Alias make mingw32-make'
-'New-Alias gedit write.exe')
+'New-Alias gedit write.exe'
+'(get-psprovider filesystem).Home = $env:USERPROFILE'
+'set-location $env:USERPROFILE')
 
 ### Note : you can have a more gedit style  ###
 
