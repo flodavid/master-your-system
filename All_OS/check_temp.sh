@@ -21,10 +21,10 @@ function launch()
         reset
     fi
     
-    sed -i '/^$/d' $FILENAME
+   
     
     
-    LINES=$(wc -l < $FILENAME);
+    LINES=$(($(wc -l < $FILENAME) - 3));
    
     while [ $LINES -gt $MAX_LINES ]
     do
@@ -32,8 +32,6 @@ function launch()
         LINES=$(wc -l < $FILENAME);
     done
     
-    sed -i '$ d' $FILENAME; 
-    sed -i '$ d' $FILENAME; 
     temp=$(cat /sys/devices/virtual/thermal/thermal_zone0/temp);
     i=1
     while [ $MAX_SECONDS -gt 0 ]
@@ -46,6 +44,9 @@ function launch()
     
     temp=$(($temp / $i));
     date=`date '+%Y %m %d %H %M %S'`
+    sed -i '/^$/d' $FILENAME
+    sed -i '$ d' $FILENAME; 
+    sed -i '$ d' $FILENAME; 
     echo -e "\t\t{\"date\":\"$date\",\"temp\":\"$temp\"}," >> $FILENAME
     echo -e "\n\t{}]\n}" >> $FILENAME
     sed -i '/^$/d' $FILENAME
